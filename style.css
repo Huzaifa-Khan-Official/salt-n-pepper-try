@@ -140,7 +140,7 @@
     margin: 20px 0;
 }
 
-.cityDiv .detailDiv button {
+.cityDiv .detailDiv button  {
     background-color: transparent;
     padding: 10px 20px;
     border-radius: 20px;
@@ -172,6 +172,63 @@
 }
 
 /* end restaurantMainDiv */
+
+/* expressMainDiv */
+.expressMainDiv {
+    background-color: black !important;
+    padding: 50px 40px;
+}
+
+.expressHeadDiv h2 span {
+    font-size: 48px;
+}
+
+.expressMainDiv .cardMainDiv .imgDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+.expressMainDiv .cardMainDiv .detailMainDiv .detailDiv {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.expressMainDiv .cardMainDiv .detailMainDiv .detailDiv p {
+    margin-bottom: 0;
+}
+
+.expressName {
+    color: red;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.expressHeading {
+    font-size: 22px;
+}
+
+.expressHeading span {
+    font-size: 30px;
+}
+
+.expressMainDiv .detailDiv button {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid gray;
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.expressMainDiv .detailDiv button img {
+    width: 25px;
+}
+/* end expressMainDiv */
 
 @media (max-width: 991px) {
     .collapse {
