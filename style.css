@@ -69,11 +69,13 @@
     background-color: black !important;
 }
 
-.cardHeadingDiv h2 {
+.cardHeadingDiv h2,
+.restaurantHeadDiv h2 {
     line-height: 50px;
 }
 
-.cardHeadingDiv h2 span {
+.cardHeadingDiv h2 span,
+.restaurantHeadDiv h2 span {
     font-size: 50px;
 }
 
@@ -111,6 +113,65 @@
 }
 
 /* end firstCardDiv */
+/* restaurantMainDiv */
+.restaurantMainDiv {
+    padding: 50px 40px;
+}
+
+.cityName {
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.detailDiv h3 span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.addressPara, .callDetail {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.cityDiv {
+    justify-content: space-evenly;
+    padding: 20px 40px;
+    margin: 20px 0;
+}
+
+.cityDiv .detailDiv button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid gray;
+    transition: all .5s;
+}
+
+.cityDiv .detailDiv button:hover {
+    background-color: gray;
+}
+
+.cityDiv .detailDiv button img {
+    width: 20px;
+}
+
+.cityDiv .imgDiv img {
+    object-fit: contain;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.cityDiv .detailMainDiv {
+    display: flex;
+    align-items: center;
+}
+
+/* end restaurantMainDiv */
 
 @media (max-width: 991px) {
     .collapse {
@@ -128,6 +189,16 @@
     .cardDiv {
         margin: 10px 0;
     }
+
+    .cityDiv {
+        padding: 20px 20px;
+        gap: 15px;
+    }
+    
+    .cityDiv .detailMainDiv {
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -139,7 +210,8 @@
         height: 400px;
     }
 
-    .firstCardDiv {
+    .firstCardDiv,
+    .restaurantMainDiv {
         padding: 50px 20px;
 
     }
